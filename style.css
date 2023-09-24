@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+   display: flex;
+    
+   align-items: center;
+   justify-content: center;
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.panel{
+    background-image: url("https://images.unsplash.com/photo-1690205073522-d9307d72d884?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+   background-size:auto 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 80vh;
+   cursor: pointer;
+   color: #fff;
+    flex: 0.5;
+    border-radius: 50px;
+    margin: 10px;
+     
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left:20px; 
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.panel:nth-child(2){
+    background-image: url("https://images.unsplash.com/photo-1665922907499-9918475de9ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");}
+
+    .panel:nth-child(2){
+        background-image:url("https://images.unsplash.com/photo-1665922907500-a73ab097ef5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")}
+
+        .panel:nth-child(3){
+            background-image:url("https://plus.unsplash.com/premium_photo-1688323905555-03064686187a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=775&q=80")
+        }
+
+        .panel:nth-child(4){
+            background-image:url("https://images.unsplash.com/photo-1665856170865-58c0f16d559b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80")}
+
+    .panel:nth-child(5){
+        background-image:url("https://images.unsplash.com/photo-1665946498289-7036efd34e22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80 ")}
+
+        .container{
+            display: flex;
+            width: 90vw;
+        }
+        
+
+  .panel.active{
+    flex: 5;
+  }      
+.panel.active h3{
+    opacity: 1;
+}
+@media(max-width:480px){
+    .container{
+        width: 100vw;
+
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    } 
+}
